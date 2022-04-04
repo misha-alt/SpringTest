@@ -8,5 +8,6 @@
 <div th:each="person:${piple}">
     <a th:href="@{/piple/{id}(id=${person.getId()})}" th:text="${person.getName()}"></a>
 </div>
+<a th:href="@{/piple/new}">Create new user</a>
 </body>
 </html>
